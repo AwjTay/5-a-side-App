@@ -66,3 +66,45 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Brief
+
+As an individual technical challenge, I have been tasked with building a tool for drafting 5-a-side football teams. This drafting process should be randomized in some way, but a stretch challenge is to introduce a mechanic for team balancing.
+
+I will be building my solution as a web-based react/redux application. These technologies are the most suited in my current skill-set to buliding single/few page application with some interactive features.
+
+###
+
+
+Name: Hannah. 
+ 
+age : 29
+
+education: Undergraduate degree
+	
+Works as a teacher in secondary school. 
+
+As a teacher, Hannah is always short on time. She organises a bi-monthly 5-a-side game for some of the female members of staff. Drafting and balancing the teams manually can be fiddily job that takes up precious time.  
+
+Technology : Hannah is computer literate, particulary in office/doc software, which she uses on a daily basis to plan/resource lessons. She's very comfortable with email comms and shares links/docs on a variety of SMPs very regulary. 
+
+She has a Samsung S7 and personal MacBook, but uses the slightly sluggish windows desktops during her workday. 
+
+Based on this, I have defined the following user stories for our MVP:
+
+“As a user, I want to be able to draft and balance two side-a-side teams a head of a match in a few minutes. Ideally, I could also share the finished teams with the other players, and possibly quickly print a hardcopy of the listings" 
+
+
+###  
+ 
+ 
+Stretch goals
+Although we were limited to a one-week deadline, if time allowed, we planned to implement the following advanced features on completing the MVP:
+Return exercise descriptions and diagrams/images with the custom workout
+User login functionality
+The ability for the user to log completed workouts and view their workout history
+Improve the app’s UI: add progress charts and a calendar view to sync with the user’s workout history
+
+
+
+
