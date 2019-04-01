@@ -1,4 +1,11 @@
 import { connect } from "react-redux";
 import TeamField from "./TeamField";
+import { handlePlayerSubmisson } from "../../data/stateActions";
 
-export default connect(null, null)(TeamField);
+const mapStateToProps = state => {
+	return {
+		teamPlayers : state.Team1Players
+	}
+}
+
+export default connect(mapStateToProps, null)(TeamField);
