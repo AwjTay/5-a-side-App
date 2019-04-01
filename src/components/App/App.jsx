@@ -1,8 +1,10 @@
 import React from 'react';
+import DraftScreen from "../DraftScreen";
 
 const App = () => {
   return (
-      <p>Hello World!</p>
+    
+      <DraftScreen />
     )
 }
 
