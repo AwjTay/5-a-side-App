@@ -1,4 +1,10 @@
 import { connect } from "react-redux";
 import TeamField from "./TeamField";
 
-export default connect(null, null)(TeamField);
+const mapStateToProps = state => {
+	return {
+		teamPlayers : state.Team2Players
+	}
+}
+
+export default connect(mapStateToProps, null)(TeamField);

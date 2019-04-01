@@ -13,15 +13,23 @@ class DraftScreen extends Component {
 
 		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSliderChange = this.handleSliderChange.bind(this);
+		this.handleClick = this.handleClick.bind(this);
 
 	}
 
 	handleInputChange(e){
 		this.setState({ playerName : e.currentTarget.value})
+		console.log(this.state.playerName)
 	}
 
 	handleSliderChange(e){
 		this.setState({ playerExperience : e.currentTarget.value})
+	}
+
+	handleClick(e){
+		//this method should be scalable to handle player experience
+		e.preventDefault();
+		this.props.onSubmit(this.state.playerName)
 	}
 
 	render() {
@@ -34,7 +42,7 @@ class DraftScreen extends Component {
 
 					<div className="col-xs-6">
 						<label htmlFor="name">Enter Player Name</label>
-						<input type="input" id="name" placeholder="Player Name"/>
+						<input onChange={ this.handleInputChange } type="input" id="name" placeholder="Player Name"/>
 					</div>
 
 					<div className="col-xs-6">
@@ -42,7 +50,7 @@ class DraftScreen extends Component {
 						<input id="experience" type="range" name="points" min="1" max="10" />
 					</div>
 
-					<button>Submit Player</button>
+					<button onClick={ this.handleClick }>Submit Player</button>
 					
 				</form>
 			</React.Fragment>

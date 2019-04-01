@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeamField = ({ teamName }) => (
+const TeamField = ({ teamName, teamPlayers }) => (
 
 	<React.Fragment>
 		<div>
