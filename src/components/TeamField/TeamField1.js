@@ -4,7 +4,7 @@ import { handlePlayerSubmisson } from "../../data/stateActions";
 
 const mapStateToProps = state => {
 	return {
-		teamPlayers : state.Team1Players
+		teamPlayers : state.team1Players
 	}
 }
 
