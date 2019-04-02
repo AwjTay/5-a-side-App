@@ -36,8 +36,8 @@ class DraftScreen extends Component {
 		return(
 			<React.Fragment>
 
-				<TeamField1 teamName ="Team 1" />
-				<TeamField2 teamName ="Team 2" />
+				<TeamField1 teamName ={ this.props.team1Name } />
+				<TeamField2 teamName ={ this.props.team2Name } />
 				<form className="form-control">
 
 					<div className="col-xs-6">
