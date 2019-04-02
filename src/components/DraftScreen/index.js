@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		onSubmit: player => dispatch(handlePlayerSubmisson(player))
+		onSubmit: data => dispatch(handlePlayerSubmisson(data))
+
 	}
 }
 

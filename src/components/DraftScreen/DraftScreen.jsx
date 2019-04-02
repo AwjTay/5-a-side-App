@@ -19,17 +19,18 @@ class DraftScreen extends Component {
 
 	handleInputChange(e){
 		this.setState({ playerName : e.currentTarget.value})
-		console.log(this.state.playerName)
 	}
 
 	handleSliderChange(e){
 		this.setState({ playerExperience : e.currentTarget.value})
+		console.log(this.state.playerExperience);
 	}
 
 	handleClick(e){
 		//this method should be scalable to handle player experience
 		e.preventDefault();
-		this.props.onSubmit(this.state.playerName)
+		this.props.onSubmit(this.state)
+		console.log(this.state)
 	}
 
 	render() {
@@ -38,8 +39,8 @@ class DraftScreen extends Component {
 
 				<TeamField1 teamName ={ this.props.team1Name } />
 				<TeamField2 teamName ={ this.props.team2Name } />
-				<form className="form-control">
 
+				<form className="form-control"> 
 					<div className="col-xs-6">
 						<label htmlFor="name">Enter Player Name</label>
 						<input onChange={ this.handleInputChange } type="input" id="name" placeholder="Player Name"/>
@@ -47,7 +48,7 @@ class DraftScreen extends Component {
 
 					<div className="col-xs-6">
 						<label htmlFor="experience">Set Player Experience</label>
-						<input id="experience" type="range" name="points" min="1" max="10" />
+						<input onChange={ this.handleSliderChange } id="experience" type="range" name="points" min="1" max="10" />
 					</div>
 
 					<button onClick={ this.handleClick }>Submit Player</button>
@@ -61,3 +62,11 @@ class DraftScreen extends Component {
 }
 
 export default DraftScreen;
+
+
+
+/*
+<TeamField1 teamName ={ this.props.team1Name } />
+				<TeamField2 teamName ={ this.props.team2Name } />
+				<form className="form-control"> 
+*/

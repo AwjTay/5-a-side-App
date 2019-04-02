@@ -1,10 +1,12 @@
-export const handlePlayerSubmisson = (player) => {
+export const handlePlayerSubmisson = ({playerName, playerExperience}) => {
 
 	return {
+
 		type : "submitPlayer",
-		player,
-	};
-}
+		player : playerName,
+		experience : playerExperience,
+	}
+};
 
 export const handleTeam1Submisson = (team1Name) => {
 	return {
