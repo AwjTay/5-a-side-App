@@ -30,7 +30,7 @@ class DraftScreen extends Component {
 		//this method should be scalable to handle player experience
 		e.preventDefault();
 		this.props.onSubmit(this.state)
-		console.log(this.state)
+		this.setState({ playerName : "" })
 	}
 
 	render() {
@@ -43,30 +43,36 @@ class DraftScreen extends Component {
 				<form className="form-control"> 
 					<div className="col-xs-6">
 						<label htmlFor="name">Enter Player Name</label>
-						<input onChange={ this.handleInputChange } type="input" id="name" placeholder="Player Name"/>
+						<input 
+							onChange={ this.handleInputChange } 
+							type="input" 
+							id="name" 
+							value={this.state.playerName} 
+							placeholder="Player Name"
+						/>
 					</div>
 
 					<div className="col-xs-6">
 						<label htmlFor="experience">Set Player Experience</label>
-						<input onChange={ this.handleSliderChange } id="experience" type="range" name="points" min="1" max="10" />
+						<input 
+							onChange={ this.handleSliderChange } 
+							id="experience" 
+							type="range" 
+							name="points" 
+							min="1" 
+							max="10" 
+						/>
 					</div>
 
 					<button onClick={ this.handleClick }>Submit Player</button>
 					
 				</form>
+
+				<button onClick={ () => this.props.reset() } className="btn-warning">Reset</button>
 			</React.Fragment>
 		)
 	}
-
-
 }
 
 export default DraftScreen;
 
-
-
-/*
-<TeamField1 teamName ={ this.props.team1Name } />
-				<TeamField2 teamName ={ this.props.team2Name } />
-				<form className="form-control"> 
-*/

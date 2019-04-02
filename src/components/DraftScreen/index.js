@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import DraftScreen from "./DraftScreen";
-import { handlePlayerSubmisson } from "../../data/stateActions";
+import { handlePlayerSubmisson, handleReset } from "../../data/stateActions";
 
 const mapStateToProps = state => {
 	return {
@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		onSubmit: data => dispatch(handlePlayerSubmisson(data))
+		onSubmit: data => dispatch(handlePlayerSubmisson(data)),
+		reset: () => dispatch(handleReset())
 
 	}
 }

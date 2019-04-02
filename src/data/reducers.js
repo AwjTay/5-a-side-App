@@ -1,7 +1,11 @@
 import initial from "./initial";
 import randInt from "random-int";
 
-const setInitial = () => initial;
+const reset = (state) => (
+		
+		{ ...state, team1Players : initial.team1Players, team2Players : initial.team2Players, }
+	
+)
 
 const playerSubmission = (state, action) => (
 	
@@ -19,7 +23,7 @@ const team2Submission  = (state, action) => ({...state, team2Name : action.team2
 const reducer = (state, action) => {
     switch (action.type) {
     	
-		case "reset": return setInitial(state.team1Players, state.team2Players);
+		case "reset": return reset(state);
 		case "submitTeam1Name" : return team1Submission(state, action);
 		case "submitTeam2Name" : return team2Submission(state, action);
 		case "submitPlayer": return playerSubmission(state, action);
