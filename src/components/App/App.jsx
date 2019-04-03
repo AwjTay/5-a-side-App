@@ -3,6 +3,7 @@ import StartScreen from "../StartScreen";
 import DraftScreen from "../DraftScreen";
 import history from "../../data/history";
 import { Router, Switch, Route } from "react-router-dom";
+import "../../styles/main.css";
 
 const App = () => {
   return (

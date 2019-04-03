@@ -32,23 +32,20 @@ class StartScreen extends Component {
 
 	render(){
 		return(
-			<React.Fragment>
-
+			<React.Fragment>	
 				<form>
-					<div className="col-xs-6">
+					<div className="form_structure">
 						<label htmlFor="teamname">Enter Team Name</label>
-						<input onChange={ this.handleChange } type="input" id="team-one-name" value={ this.state.team1Name }/>
+						<input className="input_field" onChange={ this.handleChange } type="input" id="team-one-name" value={ this.state.team1Name }/>
 					</div>
 
-					<div className="col-xs-6">
+					<div className="form_structure">
 						<label htmlFor="teamname">Enter Team Name</label>
-						<input onChange={ this.handleChange } type="input" id="team-two-name" value={ this.state.team2Name }/>
+						<input className="input_field" onChange={ this.handleChange } type="input" id="team-two-name" value={ this.state.team2Name }/>
 					</div>
+
+					<button onClick={ this.handleClick } className="form_structure submit_button">Start Draft</button>
 				</form>
-
-				<button onClick={ this.handleClick } className="btn-warning">Start Draft</button>
-
-
 			</React.Fragment>
 		)
 	}

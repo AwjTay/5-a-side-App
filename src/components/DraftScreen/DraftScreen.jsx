@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TeamField1 from "../TeamField/TeamField1";
 import TeamField2 from "../TeamField/TeamField2";
+import Thermometer1 from "../Thermometer/Thermometer1";
 
 class DraftScreen extends Component {
 	constructor(props){
@@ -36,14 +37,22 @@ class DraftScreen extends Component {
 	render() {
 		return(
 			<React.Fragment>
+				<div className="teams_container">
+					<TeamField1 teamName ={ this.props.team1Name } />
+					<Thermometer1 />
+					<button
+						className="reset_button" 
+						onClick={ () => this.props.reset() } 
+						>Reset
+					</button>
+					<TeamField2 teamName ={ this.props.team2Name } />
+				</div>
 
-				<TeamField1 teamName ={ this.props.team1Name } />
-				<TeamField2 teamName ={ this.props.team2Name } />
-
-				<form className="form-control"> 
-					<div className="col-xs-6">
+				<form> 
+					<div className="form_structure">
 						<label htmlFor="name">Enter Player Name</label>
-						<input 
+						<input
+							className="input_field" 
 							onChange={ this.handleInputChange } 
 							type="input" 
 							id="name" 
@@ -52,7 +61,7 @@ class DraftScreen extends Component {
 						/>
 					</div>
 
-					<div className="col-xs-6">
+					<div className="form_structure">
 						<label htmlFor="experience">Set Player Experience</label>
 						<input 
 							onChange={ this.handleSliderChange } 
@@ -64,11 +73,11 @@ class DraftScreen extends Component {
 						/>
 					</div>
 
-					<button onClick={ this.handleClick }>Submit Player</button>
+					<button className="submit_button" onClick={ this.handleClick }>Submit Player</button>
 					
 				</form>
 
-				<button onClick={ () => this.props.reset() } className="btn-warning">Reset</button>
+				
 			</React.Fragment>
 		)
 	}

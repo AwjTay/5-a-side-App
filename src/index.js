@@ -7,7 +7,9 @@ import store from "./data/store";
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+    	<div className="page_wrapper">
+        	<App />
+        </div>
     </Provider>,
     document.getElementById("root")
 );
