@@ -1,26 +1,3 @@
-/*page styling*/
-
-.page_wrapper{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: magenta;
-  font-family: "Helvetica";
-  font-weight: lighter;
-  font-size: 0.8rem;
-}
-
-.hero_image{
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("images/burning.jpg");
-}
-
-/*form styling*/
-
 form{
   display: flex;
   flex-direction: column;
@@ -76,43 +53,6 @@ form{
   padding-left: 4%;
 }
 
-/*team field styling*/
-
-.teams_container{
-  max-height: 100%;
-  margin-top: 1%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: auto;
-
-}
-
-.team_field{
-  max-height: 100%;
-  height: 90%;
-  padding: 2%;
-  border-style: ridge;
-  border-color: grey;
-  border-width: 5px;
-  
-}
-
-.team_field1{
-  margin: 2%;
-  width: 30%;
-  float: left;
-  padding-right: 5%;
- 
-}
-
-.team_field2{
-  margin: 2%;
-  width: 30%;
-  float: right;
-  padding-left: 5%;
-  
 }
 
 .reset_button{
@@ -131,33 +71,3 @@ form{
   background-size: 1em 1em;
 
 }
-
-/*thermometer styling*/
-
-.thermometer_one{
-  align-self: flex-end;
-  padding-right: 5%;
-  float: right;
-}
-
-.thermometer_two{
-  align-self: flex-end;
-  padding-left: 5%;
-  float: left;
-
-}
-
-.thermobase{
-  border-left: 6px solid black;
-  height : 1vh;
-}
-
-.temp{
-  border-left: 1px transparent;
-  border-right: 1px transparent;
-  background-image: linear-gradient(red, blue);
-  width: 10px;
-}
-
-
-

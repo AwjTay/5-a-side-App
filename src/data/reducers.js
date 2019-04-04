@@ -3,9 +3,10 @@ import randInt from "random-int";
 
 const reset = (state) => (
 		
-		{ ...state, team1Players : initial.team1Players, team2Players : initial.team2Players, }
+		{ ...state, team1Players : initial.team1Players, team2Players : initial.team2Players,  
+			team1Experience : initial.team1Experience, team2Experience : initial.team2Experience}
 	
-)
+);
 
 const playerSubmission = (state, action) => (
 	
@@ -33,6 +34,8 @@ const reducer = (state, action) => {
 };
 
 export default reducer;
+
+//(state.team1Experience + 1) % randInt(1, 2) 
 
 
 //fix submission of team names? + default value

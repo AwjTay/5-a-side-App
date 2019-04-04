@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TeamField1 from "../TeamField/TeamField1";
 import TeamField2 from "../TeamField/TeamField2";
 import Thermometer1 from "../Thermometer/Thermometer1";
+import Thermometer2 from "../Thermometer/Thermometer2";
 
 class DraftScreen extends Component {
 	constructor(props){
@@ -9,7 +10,7 @@ class DraftScreen extends Component {
 
 		this.state = {
 			playerName : "",
-			playerExperience : 5,
+			playerExperience : 0,
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -28,7 +29,6 @@ class DraftScreen extends Component {
 	}
 
 	handleClick(e){
-		//this method should be scalable to handle player experience
 		e.preventDefault();
 		this.props.onSubmit(this.state)
 		this.setState({ playerName : "" })
@@ -36,21 +36,40 @@ class DraftScreen extends Component {
 
 	render() {
 		return(
+
 			<React.Fragment>
+
 				<div className="teams_container">
-					<TeamField1 teamName ={ this.props.team1Name } />
-					<Thermometer1 />
+
+					<div className="team_field1">
+						<TeamField1 teamName ={ this.props.team1Name } />
+					</div>
+
+					<div className="thermometer_one">
+						<Thermometer1 />
+					</div>	
+
 					<button
 						className="reset_button" 
 						onClick={ () => this.props.reset() } 
 						>Reset
 					</button>
-					<TeamField2 teamName ={ this.props.team2Name } />
+
+					<div className="thermometer_two">
+						<Thermometer2 />
+					</div>
+
+					<div className="team_field2">
+						<TeamField2 teamName ={ this.props.team2Name } />
+					</div>	
+
 				</div>
 
 				<form> 
+
 					<div className="form_structure">
-						<label htmlFor="name">Enter Player Name</label>
+
+						<label className="form_label" htmlFor="name">Enter Player Name</label>
 						<input
 							className="input_field" 
 							onChange={ this.handleInputChange } 
@@ -59,11 +78,14 @@ class DraftScreen extends Component {
 							value={this.state.playerName} 
 							placeholder="Player Name"
 						/>
+
 					</div>
 
 					<div className="form_structure">
-						<label htmlFor="experience">Set Player Experience</label>
-						<input 
+
+						<label className="form_label" htmlFor="experience">Set Player Experience</label>
+						<input
+							className="slider" 
 							onChange={ this.handleSliderChange } 
 							id="experience" 
 							type="range" 

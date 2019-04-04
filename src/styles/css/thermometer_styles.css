@@ -1,0 +1,431 @@
+
+
+
+
+
+
+
+
+.thermometer_one{
+  align-self: flex-end;
+  padding-right: 5%;
+  float: right;
+   
+  
+}
+.thermometer_two{
+  align-self: flex-end;
+  padding-left: 5%;
+  float: left;
+} 
+
+.thermobase{
+  border-left: 6px solid black;
+  height : 1vh;
+}
+
+.temp1{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 0.5vh;
+}
+
+.temp2{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 1vh;
+}
+
+.temp3{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 1.5vh;
+}
+
+.temp4{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 2vh;
+}
+
+.temp5{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 2.5vh;
+}
+
+.temp6{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 3vh;
+}
+
+.temp7{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 3.5vh;
+}
+
+.temp8{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 4vh;
+}
+
+.temp9{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 4.5vh;
+}
+
+.temp10{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 5vh;
+  
+}
+
+.temp11{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 5.5vh;
+}
+
+.temp12{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 6vh;
+}
+
+.temp13{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 6.5vh;
+}
+
+.temp14{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 7vh;
+}
+
+.temp15{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 7.5vh;
+}
+
+.temp16{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 8vh;
+}
+
+.temp17{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 8.5vh;
+}
+
+.temp18{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 9vh;
+}
+
+.temp19{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 9.5vh;
+}
+
+.temp20{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 10vh;
+}
+
+.temp21{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 10.5vh;
+}
+
+.temp22{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 11vh;
+}
+
+.temp23{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 11.5vh;
+}
+
+.temp24{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 12vh;
+}
+
+.temp25{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 12.5vh;
+}
+
+.temp26{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 13vh;
+}
+
+.temp27{
+ border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 13.5vh;
+}
+
+.temp28{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 14vh;
+}
+
+.temp29{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 14.5vh;
+}
+
+.temp30{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 15vh;
+}
+
+.temp31{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 15.5vh;
+}
+
+.temp32{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 16vh;
+}
+
+.temp33{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 16.5vh;
+}
+
+.temp34{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 17vh;
+}
+
+.temp35{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 17.5vh;
+}
+
+.temp36{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 18vh;
+}
+
+.temp37{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 18.5vh;
+}
+
+.temp38{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 19vh;
+}
+
+.temp39{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 19.5vh;
+}
+
+.temp40{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 20vh;
+}
+
+.temp41{
+ border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 20.5vh;
+}
+
+.temp42{
+ border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 21vh;
+}
+
+.temp43{
+ border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 21.5vh;
+}
+
+.temp44{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 22vh;
+}
+
+.temp45{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 22.5vh;
+}
+
+.temp46{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 23vh;
+}
+
+.temp47{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 23.5vh;
+}
+
+.temp48{
+ border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 24vh;
+
+}
+
+.temp49{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 24.5vh;
+
+}
+
+.temp50{
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+  background-image: linear-gradient(red, blue);
+  width: 6px;
+  height: 25vh;
+
+}
+
+

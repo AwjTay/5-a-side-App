@@ -32,7 +32,8 @@ class StartScreen extends Component {
 
 	render(){
 		return(
-			<React.Fragment>	
+			<React.Fragment>
+
 				<form>
 					<div className="form_structure">
 						<label htmlFor="teamname">Enter Team Name</label>
