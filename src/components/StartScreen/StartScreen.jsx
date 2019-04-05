@@ -6,6 +6,7 @@ class StartScreen extends Component {
 		this.state = {
 			team1Name : "Team 1",
 			team2Name : "Team 2",
+			teamsSize : 5,
 		}
 
 		this.handleChange = this.handleChange.bind(this);
@@ -21,6 +22,9 @@ class StartScreen extends Component {
 			break;
 			case "team-two-name" :
 			this.setState({team2Name : e.currentTarget.value })
+			break;
+			case "teams-size" :
+			this.setState({teamsSize : e.currentTarget.value})
 		}
 	}
 
@@ -44,6 +48,8 @@ class StartScreen extends Component {
 						<label htmlFor="teamname">Enter Team Name</label>
 						<input className="input_field" onChange={ this.handleChange } type="input" id="team-two-name" value={ this.state.team2Name }/>
 					</div>
+
+					<input className="input_field" id="teams-size"/> 
 
 					<button onClick={ this.handleClick } className="form_structure submit_button">Start Draft</button>
 				</form>

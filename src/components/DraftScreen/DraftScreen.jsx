@@ -10,7 +10,7 @@ class DraftScreen extends Component {
 
 		this.state = {
 			playerName : "",
-			playerExperience : 0,
+			playerExperience : 5,
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -85,6 +85,7 @@ class DraftScreen extends Component {
 
 						<label className="form_label" htmlFor="experience">Set Player Experience</label>
 						<input
+							
 							className="slider" 
 							onChange={ this.handleSliderChange } 
 							id="experience" 

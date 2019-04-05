@@ -4,10 +4,10 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: magenta;
+  background-image: linear-gradient(#606c88, #3f4c6b);
   font-family: "Helvetica";
   font-weight: lighter;
-  font-size: 0.8rem;
+  /*font-size: 0.8rem;*/
 }
 
 .hero_image{
@@ -32,10 +32,12 @@ form{
   position: absolute;
   bottom: 0;
   width: 85%;
+  background-image: linear-gradient(#abbaab, #ffffff);
 }
 
 .form_structure label{
-  color: red;
+  color: black;
+  padding-top: 1px;
 }
 
 .submit_button{
@@ -96,6 +98,7 @@ form{
   border-style: ridge;
   border-color: grey;
   border-width: 5px;
+  background-image: linear-gradient(#abbaab, #ffffff);
   
 }
 
@@ -104,6 +107,7 @@ form{
   width: 30%;
   float: left;
   padding-right: 5%;
+
  
 }
 
@@ -113,6 +117,14 @@ form{
   float: right;
   padding-left: 5%;
   
+}
+
+li{
+  padding-right: 10%; 
+}
+
+.team_field li{
+  font-size: 0.6rem;
 }
 
 .reset_button{
@@ -148,7 +160,7 @@ form{
 }
 
 .thermobase{
-  border-left: 6px solid black;
+  border-left: 15px solid black;
   height : 1vh;
 }
 
@@ -156,7 +168,7 @@ form{
   border-left: 1px transparent;
   border-right: 1px transparent;
   background-image: linear-gradient(red, blue);
-  width: 10px;
+  width: 15px;
 }
 
 
