@@ -11,6 +11,7 @@ class DraftScreen extends Component {
 		this.state = {
 			playerName : "",
 			playerExperience : 10,
+			errorMessage : "",
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -29,15 +30,22 @@ class DraftScreen extends Component {
 	}
 
 	handleClick(e){
-		let { team1Players, team2Players } = this.props;
 		e.preventDefault();
-		team1Players.length === 0 && team2Players.length === 0 ? this.props.onFirstSubmit(this.state) : this.props.onSubmit(this.state);
-		this.setState({ playerName : "" })
+		if(!this.state.playerName){
+			this.setState({ errorMessage : "Please enter a player name" })
+		} else {
+			let { team1Players, team2Players } = this.props;
+			
+			team1Players.length === 0 && team2Players.length === 0 ? this.props.onFirstSubmit(this.state) : this.props.onSubmit(this.state);
+			this.setState({ playerName : "" })
+			this.setState({ errorMessage : "" })
+		}
+		
 	}
 
 	render() {
 
-		let { team1Players, team2Players, teamsSize, team1Xp, team2Xp, team1Name, team2Name } = this.props;
+		const { team1Players, team2Players, teamsSize, team1Xp, team2Xp, team1Name, team2Name } = this.props;
 
 		return(
 
@@ -86,7 +94,9 @@ class DraftScreen extends Component {
 									value={this.state.playerName} 
 									placeholder="Player Name"
 								/>
+								<div>{this.state.errorMessage}</div>
 							</div>
+
 						}
 
 					</div>

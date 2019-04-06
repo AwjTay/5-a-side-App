@@ -24,7 +24,7 @@ class StartScreen extends Component {
 			this.setState({team2Name : e.currentTarget.value })
 			break;
 			case "teams-size" :
-			this.setState({teamsSize : e.currentTarget.value})
+			this.setState({teamsSize : +e.currentTarget.value})
 			break;
 			default: 
 			return null;

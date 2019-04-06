@@ -1,5 +1,5 @@
 import React from "react";
 
-const Thermometer = ({xp}) => (xp ? <div className="temp" style={{height : `${xp/2}vh`}}></div> : <div className="thermobase"></div>);
+const Thermometer = ({xp}) => (xp ? <div className="temp" style={{height : `${xp/1.5}vh`}}></div> : <div className="thermobase"></div>);
 
 export default Thermometer;
