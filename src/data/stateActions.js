@@ -1,3 +1,13 @@
+export const handleFirstSubmisson = ({playerName, playerExperience}) => {
+
+	return {
+
+		type : "submitFirstPlayer",
+		player : playerName,
+		experience : playerExperience,
+	}
+};
+
 export const handlePlayerSubmisson = ({playerName, playerExperience}) => {
 
 	return {
@@ -15,16 +25,13 @@ export const handleReset = () => {
 	}
 };
 
-export const handleTeam1Submisson = (team1Name) => {
+export const handleTeamsSubmisson = ({team1Name, team2Name, teamsSize}) => {
 	return {
-		type : "submitTeam1Name",
-		team1Name : team1Name, 
+		type : "submitTeams",
+		team1Name,
+		team2Name,
+		teamsSize 
 	}
 }; 
 
-export const handleTeam2Submisson = (team2Name) => {
-	return {
-		type : "submitTeam2Name",
-		team2Name : team2Name, 
-	}
-};
+

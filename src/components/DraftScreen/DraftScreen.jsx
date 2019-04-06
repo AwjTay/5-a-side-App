@@ -10,7 +10,7 @@ class DraftScreen extends Component {
 
 		this.state = {
 			playerName : "",
-			playerExperience : 5,
+			playerExperience : 10,
 		}
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -29,12 +29,16 @@ class DraftScreen extends Component {
 	}
 
 	handleClick(e){
+		let { team1Players, team2Players } = this.props;
 		e.preventDefault();
-		this.props.onSubmit(this.state)
+		team1Players.length === 0 && team2Players.length === 0 ? this.props.onFirstSubmit(this.state) : this.props.onSubmit(this.state);
 		this.setState({ playerName : "" })
 	}
 
 	render() {
+
+		let { team1Players, team2Players, teamsSize, team1Xp, team2Xp, team1Name, team2Name } = this.props;
+
 		return(
 
 			<React.Fragment>
@@ -42,7 +46,7 @@ class DraftScreen extends Component {
 				<div className="teams_container">
 
 					<div className="team_field1">
-						<TeamField1 teamName ={ this.props.team1Name } />
+						<TeamField1 teamName ={ team1Name } />
 					</div>
 
 					<div className="thermometer_one">
@@ -60,7 +64,7 @@ class DraftScreen extends Component {
 					</div>
 
 					<div className="team_field2">
-						<TeamField2 teamName ={ this.props.team2Name } />
+						<TeamField2 teamName ={ team2Name } />
 					</div>	
 
 				</div>
@@ -69,15 +73,21 @@ class DraftScreen extends Component {
 
 					<div className="form_structure">
 
-						<label className="form_label" htmlFor="name">Enter Player Name</label>
-						<input
-							className="input_field" 
-							onChange={ this.handleInputChange } 
-							type="input" 
-							id="name" 
-							value={this.state.playerName} 
-							placeholder="Player Name"
-						/>
+						{team1Players.length === teamsSize && team2Players.length === teamsSize ? 
+						`Draft complete. ${team1Name} strength is ${team1Xp} and ${team2Name} is ${team2Xp}. Game on!` :
+						
+							<div>
+								<label className="form_label" htmlFor="name">Enter Player Name</label>
+								<input
+									className="input_field" 
+									onChange={ this.handleInputChange } 
+									type="input" 
+									id="name" 
+									value={this.state.playerName} 
+									placeholder="Player Name"
+								/>
+							</div>
+						}
 
 					</div>
 
@@ -85,7 +95,7 @@ class DraftScreen extends Component {
 
 						<label className="form_label" htmlFor="experience">Set Player Experience</label>
 						<input
-							
+
 							className="slider" 
 							onChange={ this.handleSliderChange } 
 							id="experience" 
