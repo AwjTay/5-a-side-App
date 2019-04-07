@@ -26,7 +26,6 @@ class DraftScreen extends Component {
 
 	handleSliderChange(e){
 		this.setState({ playerExperience : e.currentTarget.value})
-		console.log(this.state.playerExperience);
 	}
 
 	handleClick(e){

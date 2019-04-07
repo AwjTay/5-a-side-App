@@ -11,4 +11,3 @@ const initial = {
 
 export default initial;
 
-// finish styling, remove submit button on team completion, implement sharing - you can don all of this shit tomorrow!

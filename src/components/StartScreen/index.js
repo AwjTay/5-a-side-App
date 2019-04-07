@@ -3,6 +3,8 @@ import StartScreen from "./StartScreen";
 import { handleTeamsSubmisson } from "../../data/stateActions";
 import history from "../../data/history";
 
+//dispatches action to submit team names, then navigates user to draft screen
+
 const mapDispatchToProps = dispatch => {
 	return{	
 		onSubmit: data => { 
@@ -14,4 +16,3 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(null, mapDispatchToProps)(StartScreen);
 
-//now move to reducer and update team submission function and players function

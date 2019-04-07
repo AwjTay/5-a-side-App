@@ -14,6 +14,7 @@ const mapStateToProps = state => {
 	}
 }
 
+//dispatches either first submission action, standard submit or reset, depending on case
 
 const mapDispatchToProps = dispatch => {
 	return {

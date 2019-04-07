@@ -8,7 +8,6 @@ const reset = (state) => (
 	
 );
 
-
 const teamsSubmission  = (state, action) => ({...state, team1Name : action.team1Name, team2Name : action.team2Name, teamsSize : action.teamsSize});
 
 const firstSubmission = (state, action) => {
@@ -16,7 +15,7 @@ const firstSubmission = (state, action) => {
 	//called if both teams currently have no players - randomly assigns first player to either team
 
 	if(randInt(0, 1) === 0){
-		console.log("line 21")
+
 		return(
 			
 			{...state, team1Players : [...state.team1Players, action.player], 
@@ -24,7 +23,7 @@ const firstSubmission = (state, action) => {
 		);
 
 	} else {
-		console.log("line 29")
+	
 		return(
 			
 			{...state, team2Players : [...state.team2Players, action.player], 
@@ -41,7 +40,7 @@ const playerSubmission = (state, action) => {
 
 	if((state.team2Experience > state.team1Experience && state.team1Players.length < state.teamsSize) || 
 		(state.team2Players.length === state.teamsSize && state.team1Players.length < state.teamsSize)) {
-		console.log("line 43")
+		
 		return (
 			{...state, team1Players : [...state.team1Players, action.player], 
 			team1Experience : state.team1Experience + +action.experience}
@@ -50,7 +49,7 @@ const playerSubmission = (state, action) => {
 
 	} else if ((state.team1Experience > state.team2Experience && state.team2Players.length < state.teamsSize) ||
 		(state.team1Players.length === state.teamsSize && state.team2Players.length < state.teamsSize)) {
-		console.log("line 51")
+		
 		return (
 			{...state, team2Players : [...state.team2Players, action.player], 
 			team2Experience : state.team2Experience + +action.experience}
@@ -58,7 +57,7 @@ const playerSubmission = (state, action) => {
 	
 
 	} else if(state.team1Experience === state.team2Experience && state.team1Players.length < state.teamsSize && state.team2Players.length < state.teamsSize){
-			console.log("line 59")
+			
 		//reaches this condition if both teams have value and are equal - randomly assigns next player
 
 		return (
@@ -88,8 +87,8 @@ const reducer = (state, action) => {
 		case "submitTeams" : return teamsSubmission(state, action);
 		case "submitFirstPlayer" : return firstSubmission(state, action);
 		case "submitPlayer": return playerSubmission(state, action);
-		        default:
-		            return state;
+        default:
+            return state;
 	}
 };
 

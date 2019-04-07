@@ -13,14 +13,6 @@
   align-content: stretch;
 }
 
-.hero_image{
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("images/burning.jpg");
-}
 
 .app_title{
   margin-top: 5%;
@@ -37,9 +29,6 @@
 
 /*form styling*/
 
-.start_form{
-
-}
 
 form{
   display: flex;
@@ -81,7 +70,7 @@ form{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 80%;
-  padding: 2%;
+  padding: 1%;
   margin: 2%;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -164,6 +153,8 @@ form{
   margin: 1%;
 }
 
+/*Reset styling*/
+
 .reset_container{
   margin-top: 2%;
   width: 100%;
@@ -196,9 +187,7 @@ form{
 }
 
 .thermometer_two{
-  align-self: flex-end;
-  
- 
+  align-self: flex-end; 
 
 }
 
@@ -215,6 +204,8 @@ form{
   height: 3vh;
   margin-top: 1vh;
 }
+
+/*Sharing icons styling*/
 
 .nav_wrapper{
   display: flex;
@@ -235,15 +226,13 @@ form{
   background-color: #59A96A;
 }
 
+/*Media query*/
 
 @media screen and (max-width: 500px) {
   .teams_container{
     display: flex;  
     flex-direction: column;
-
     height: 60%;
-    
-
   }
 
   .team_field h4{
@@ -261,15 +250,11 @@ form{
     font-size: 0.55rem;
   }
 
-  
-
-
   .team_field1{
     width: 90%;
 
   }
-
-
+  
   .team_field2{
   padding-left: 0%;
   width: 90%;
