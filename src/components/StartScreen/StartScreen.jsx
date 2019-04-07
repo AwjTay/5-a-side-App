@@ -41,7 +41,10 @@ class StartScreen extends Component {
 		return(
 			<React.Fragment>
 
-				<form>
+				<h2 className="app_title">Dream Draft</h2>
+				<h5 className="strap_line">Randomise and Balance Teams</h5>
+
+				<form className="start_form">
 					<div className="form_structure">
 						<label htmlFor="team one name">Enter Team Name</label>
 						<input className="input_field" onChange={ this.handleChange } type="input" id="team-one-name" value={ this.state.team1Name }/>

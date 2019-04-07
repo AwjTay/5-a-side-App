@@ -7,7 +7,10 @@
   background-image: linear-gradient(#59A96A, #636940);
   font-family: "Helvetica";
   font-weight: lighter;
-  /*font-size: 0.8rem;*/
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
 }
 
 .hero_image{
@@ -19,18 +22,34 @@
   background-image: url("images/burning.jpg");
 }
 
+.app_title{
+  margin-top: 5%;
+  display: flex;
+  align-self: center; 
+  text-shadow: 0 0.5px #9BDEAC, 0 1px #9BDEAC;
+  letter-spacing: 1px;
+}
+
+.strap_line{
+  display: flex;
+  align-self: center; 
+}
+
 /*form styling*/
+
+.start_form{
+
+}
 
 form{
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  align-self: center;
+  margin: 1%;
   border-style: groove;
   border-color: grey;
   border-width: 5px;
   padding: 1%;
-  position: absolute;
-  bottom: 0;
   width: 85%;
   background-image: linear-gradient(#9BDEAC, #B4E7CE);
 }
@@ -81,19 +100,20 @@ form{
 /*team field styling*/
 
 .teams_container{
-  max-height: 100%;
+  
   margin-top: 1%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  overflow: auto;
+  
 
 }
 
 .team_field{
-  max-height: 100%;
-  height: 90%;
+  
+  height: 100%;
   padding: 2%;
   border-style: groove;
   border-color: grey;
@@ -103,35 +123,58 @@ form{
 }
 
 .team_field1{
+  display: flex;
+  flex-direction: column;
   margin: 2%;
-  width: 30%;
+  width: 40%;
+  height: 90%;
   float: left;
   padding-right: 5%;
+}
 
- 
+.team_field1 .thermometer_one, .thermobase{
+  align-self: flex-start;
+}
+
+.team_field2 .thermometer_two, .thermobase{
+  align-self: flex-start;
 }
 
 .team_field2{
+  display: flex;
+  flex-direction: column;
   margin: 2%;
-  width: 30%;
+  width: 40%;
+  height: 90%;
   float: right;
   padding-left: 5%;
   
 }
 
-li{
-  padding-right: 10%; 
-}
+.team_field ul{
+    column-count: 2;
+    column-span: all;
+    column-fill: balance;
+    column-width: 40%;
+    column-gap: 5% 
+  }
 
 .team_field li{
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  margin: 1%;
+}
+
+.reset_container{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .reset_button{
-  grid-area: 1 / 2 / 2 / 3;
-  align-self: center;
+  
+
   border-radius: 50%;
-  margin-top: 20vh;
   height: 50px;
   width: 50px;
   border: solid black 0.5px;
@@ -148,28 +191,93 @@ li{
 
 .thermometer_one{
   align-self: flex-end;
-  padding-right: 5%;
-  float: right;
+  
+  
 }
 
 .thermometer_two{
   align-self: flex-end;
-  padding-left: 5%;
-  float: left;
+  
+ 
 
 }
 
 .thermobase{
   border-left: 15px solid black;
-  height : 1vh;
+  height : 3vh;
+  margin-top: 1vh;
 }
 
 .temp{
-  border-left: 1px transparent;
-  border-right: 1px transparent;
-  background-image: linear-gradient(red, blue);
-  width: 15px;
+  border-top: 1px transparent;
+  border-bottom: 1px transparent;
+  background-image: linear-gradient(to right, #87cefa, #DC143C);
+  height: 3vh;
+  margin-top: 1vh;
 }
+
+.nav_wrapper{
+  display: flex;
+  align-self: center;
+}
+
+.social_icons a{
+  display: inline-block;
+  outline-width: 100%;
+  background-color: #B4E7CE;
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 50%;
+
+}
+
+.social_icons a:hover{
+  background-color: #59A96A;
+}
+
+
+@media screen and (max-width: 500px) {
+  .teams_container{
+    display: flex;  
+    flex-direction: column;
+
+    height: 60%;
+    
+
+  }
+
+  .team_field h4{
+    margin: 1%;
+  }
+
+  .team_field ul{
+    column-count: 3;
+    column-span: all;
+    column-fill: balance;
+    column-width: 30%; 
+  }
+
+  .team_field ul li{
+    font-size: 0.55rem;
+  }
+
+  
+
+
+  .team_field1{
+    width: 90%;
+
+  }
+
+
+  .team_field2{
+  padding-left: 0%;
+  width: 90%;
+  } 
+}  
+
+
+
 
 
 
