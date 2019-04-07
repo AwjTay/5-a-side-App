@@ -29,7 +29,6 @@
 
 /*form styling*/
 
-
 form{
   display: flex;
   flex-direction: column;
@@ -178,6 +177,15 @@ form{
 
 }
 
+.reset_button:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
 /*thermometer styling*/
 
 .thermometer_one{
@@ -240,10 +248,10 @@ form{
   }
 
   .team_field ul{
-    column-count: 3;
+    column-count: 2;
     column-span: all;
     column-fill: balance;
-    column-width: 30%; 
+    column-width: 50%; 
   }
 
   .team_field ul li{
@@ -258,7 +266,17 @@ form{
   .team_field2{
   padding-left: 0%;
   width: 90%;
-  } 
+  }
+
+  .start_form{
+    flex: 1;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+  .start_form .form_structure .input_field{
+    height: 100%;
+  }
+
 }  
 
 

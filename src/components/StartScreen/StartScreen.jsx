@@ -42,7 +42,7 @@ class StartScreen extends Component {
 			<React.Fragment>
 
 				<h2 className="app_title">Dream Draft</h2>
-				<h5 className="strap_line">Randomise and Balance Teams</h5>
+				<h4 className="strap_line">Randomise and Balance Teams</h4>
 
 				<form className="start_form">
 					<div className="form_structure">
