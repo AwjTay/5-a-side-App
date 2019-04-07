@@ -3,7 +3,7 @@ import TeamField from "./TeamField";
 
 const mapStateToProps = state => {
 	return {
-		teamPlayers : state.Team2Players
+		teamPlayers : state.team2Players
 	}
 }
 

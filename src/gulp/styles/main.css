@@ -1,0 +1,286 @@
+/*page styling*/
+
+.page_wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(#59A96A, #636940);
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+
+.app_title{
+  margin-top: 5%;
+  display: flex;
+  align-self: center; 
+  text-shadow: 0 0.5px #9BDEAC, 0 1px #9BDEAC;
+  letter-spacing: 1px;
+}
+
+.strap_line{
+  display: flex;
+  align-self: center; 
+}
+
+/*form styling*/
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 1%;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  padding: 1%;
+  width: 85%;
+  background-image: linear-gradient(#9BDEAC, #B4E7CE);
+}
+
+.form_structure label{
+  color: black;
+  padding-top: 1px;
+}
+
+.submit_button{
+  background: #2A88AD;
+  padding: 8px 20px 8px 20px;
+  border-radius: 5px;
+  margin: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  border: 1px solid #257C9E;
+  font-size: 15px;
+}
+
+.input_field {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 80%;
+  padding: 1%;
+  margin: 2%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border: 2px solid #fff;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.slider{
+  width: 80%;
+  padding-left: 4%;
+}
+
+/*team field styling*/
+
+.teams_container{
+  
+  margin-top: 1%;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+
+.team_field{
+  
+  height: 100%;
+  padding: 2%;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-image: linear-gradient(#9BDEAC, #B4E7CE);
+  
+}
+
+.team_field1{
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 40%;
+  height: 90%;
+  float: left;
+  padding-right: 5%;
+}
+
+.team_field1 .thermometer_one, .thermobase{
+  align-self: flex-start;
+}
+
+.team_field2 .thermometer_two, .thermobase{
+  align-self: flex-start;
+}
+
+.team_field2{
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 40%;
+  height: 90%;
+  float: right;
+  padding-left: 5%;
+  
+}
+
+.team_field ul{
+    column-count: 2;
+    column-span: all;
+    column-fill: balance;
+    column-width: 40%;
+    column-gap: 5% 
+  }
+
+.team_field li{
+  font-size: 0.7rem;
+  margin: 1%;
+}
+
+/*Reset styling*/
+
+.reset_container{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reset_button{
+  
+
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: solid black 0.5px;
+  background-image: /* tint image */
+  linear-gradient(to right, rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0.75)),
+  linear-gradient(to right, black 50%, white 50%),
+  linear-gradient(to bottom, black 50%, white 50%);
+  background-blend-mode: normal, difference, normal;
+  background-size: 1em 1em;
+
+}
+
+.reset_button:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+/*thermometer styling*/
+
+.thermometer_one{
+  align-self: flex-end;
+  
+  
+}
+
+.thermometer_two{
+  align-self: flex-end; 
+
+}
+
+.thermobase{
+  border-left: 15px solid black;
+  height : 3vh;
+  margin-top: 1vh;
+}
+
+.temp{
+  border-top: 1px transparent;
+  border-bottom: 1px transparent;
+  background-image: linear-gradient(to right, #87cefa, #DC143C);
+  height: 3vh;
+  margin-top: 1vh;
+}
+
+/*Sharing icons styling*/
+
+.nav_wrapper{
+  display: flex;
+  align-self: center;
+}
+
+.social_icons a{
+  display: inline-block;
+  outline-width: 100%;
+  background-color: #B4E7CE;
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 50%;
+
+}
+
+.social_icons a:hover{
+  background-color: #59A96A;
+}
+
+/*Media query*/
+
+@media screen and (max-width: 500px) {
+  .teams_container{
+    display: flex;  
+    flex-direction: column;
+    height: 60%;
+  }
+
+  .team_field h4{
+    margin: 1%;
+  }
+
+  .team_field ul{
+    column-count: 2;
+    column-span: all;
+    column-fill: balance;
+    column-width: 50%; 
+  }
+
+  .team_field ul li{
+    font-size: 0.55rem;
+  }
+
+  .team_field1{
+    width: 90%;
+
+  }
+  
+  .team_field2{
+  padding-left: 0%;
+  width: 90%;
+  }
+
+  .start_form{
+    flex: 1;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+  .start_form .form_structure .input_field{
+    height: 100%;
+  }
+
+}  
+
+
+
+
+
+

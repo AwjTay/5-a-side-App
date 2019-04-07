@@ -1,22 +1,28 @@
 import { connect } from "react-redux";
 import DraftScreen from "./DraftScreen";
-import { handlePlayerSubmisson } from "../../data/stateActions";
+import { handleFirstSubmisson, handlePlayerSubmisson, handleReset } from "../../data/stateActions";
 
 const mapStateToProps = state => {
 	return {
-		playerName : state.playerName,
+		team1Name : state.team1Name,
+		team2Name : state.team2Name,
+		team1Players : state.team1Players,
+		team2Players : state.team2Players,
+		teamsSize : state.teamsSize,
+		team1Xp : state.team1Experience,
+		team2Xp : state.team2Experience,
 	}
 }
+
+//dispatches either first submission action, standard submit or reset, depending on case
 
 const mapDispatchToProps = dispatch => {
-	console.log("mango");
 	return {
-		onSubmit: player => dispatch(handlePlayerSubmisson(player))
+		onFirstSubmit: data => dispatch(handleFirstSubmisson(data)),
+		onSubmit: data => dispatch(handlePlayerSubmisson(data)),
+		reset: () => dispatch(handleReset()),
+
 	}
 }
 
-
-export default connect(null, mapDispatchToProps)(DraftScreen);
-
-
-//should be dispatching submitted player name properly now (run some tests). Then, reducers need to correctly randomise and update state.
+export default connect(mapStateToProps, mapDispatchToProps)(DraftScreen);
