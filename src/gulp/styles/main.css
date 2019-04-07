@@ -69,8 +69,9 @@ form{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 80%;
-  padding: 1%;
-  margin: 2%;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1.2rem;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
